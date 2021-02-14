@@ -68,7 +68,7 @@ namespace TestCasesWithSelenium.TestScenarios._3
             }
             catch (NoSuchElementException e)
             {
-
+                Assert.IsTrue(false);
                 throw e;
             }
         }
