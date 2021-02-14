@@ -8,12 +8,12 @@ namespace TestCasesWithSelenium.Classes
 {
   public  class Useri
     {
-        public  string Name = "Anton";
-        public  string surname = "Gjoka";
-        public  string Email = "anton.gjoka@riinvest.net";
-        public  string Phone = "045904843";
+        public  string Name = "Ardenis";
+        public  string surname = "Idrizi";
+        public  string Email = "ardenis.idrizi@riinvest.net";
+        public  string Phone = "044376959";
         public  string Comment = "Komenti";
-        public  string BDay = "02/01/2020";            
+        public  string BDay = "06/07/2000";            
         
 
     }
