@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using TestCasesWithSelenium.Classes;
 
 namespace TestCasesWithSelenium.TestScenarios._4
 {
@@ -32,19 +33,21 @@ namespace TestCasesWithSelenium.TestScenarios._4
         [Test]
         public void Valid()
         {
-
             // Me prit derisa tloadohet faqja
+            //nuk i gjajke qito elemente 
+            Useri user = new Useri();
+            Useri useriqeduhettapranojm = new Useri();
             Driver.driver.FindElement(By.XPath($"//a[@href='https://international.riinvest.net/']")).Click();
             Thread.Sleep(4000);
             Driver.driver.FindElement(By.XPath($"//a[@href='https://international.riinvest.net/admissions/']")).Click();
             Thread.Sleep(8000);
-            Driver.driver.FindElement(By.XPath($"//input[@placeholder='First']")).SendKeys("Anton");
+            Driver.driver.FindElement(By.XPath($"//input[@placeholder='First']")).SendKeys(user.Name);
             Thread.Sleep(1000);
-            Driver.driver.FindElement(By.XPath($"//input[@name='control8781308-5']")).SendKeys("asd");
+            Driver.driver.FindElement(By.XPath($"//input[@name='control8781308-5']")).SendKeys(user.surname);
             Thread.Sleep(1000);
-            Driver.driver.FindElement(By.XPath($"//input[@name='control8781308-2']")).SendKeys("asd");
+            Driver.driver.FindElement(By.XPath($"//input[@name='control8781308-2']")).SendKeys(user.Email);
             Thread.Sleep(1000);
-            Driver.driver.FindElement(By.XPath($"//input[@name='control8781310']")).SendKeys("01/01/2021");
+            Driver.driver.FindElement(By.XPath($"//input[@name='control8781310']")).SendKeys(user.BDay);
             Thread.Sleep(1000);
             Driver.driver.FindElement(By.XPath($"//input[@name='control8781313-1']")).SendKeys("123");
             Thread.Sleep(1000);
@@ -56,9 +59,9 @@ namespace TestCasesWithSelenium.TestScenarios._4
             Thread.Sleep(1000);
             Driver.driver.FindElement(By.XPath($"//input[@name='control8781319-0']")).Click();
 
-            
+
             //input[@name="control8797202"]
-            Assert.IsTrue(Driver.driver.PageSource.Contains("Payment"));
+            Assert.AreSame(useriqeduhettapranojm, user);
         }
     }
 }

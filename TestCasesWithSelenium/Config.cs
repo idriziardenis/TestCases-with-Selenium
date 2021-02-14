@@ -9,7 +9,7 @@ namespace TestCasesWithSelenium
     public class Config
     {
         public static string BaseUrl = "https://www.riinvest.net/";
-        public static string ScreenshotDir = @"C:\Users\Ardenis\Desktop\Schreenshoots";
+        public static string ScreenshotDir = @"C:\Users\Ardenis\Desktop\Screenshoots";
 
 
         public static class AlertMessages

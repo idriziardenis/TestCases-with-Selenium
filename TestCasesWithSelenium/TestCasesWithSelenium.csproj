@@ -58,15 +58,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Action.cs" />
+    <Compile Include="Classes\Aplikimi.cs" />
+    <Compile Include="Classes\CocacolaComment.cs" />
+    <Compile Include="Classes\Porosija.cs" />
+    <Compile Include="Classes\UrlClass.cs" />
+    <Compile Include="Classes\Useri.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Driver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestScenarios\1\CocacolaPartnershipComent.cs" />
     <Compile Include="TestScenarios\1\Kerkimi i informatave per laboratoret e kolegjit.cs" />
     <Compile Include="TestScenarios\1\Kerkimi i informatave per zyren e financave te kolegjit.cs" />
     <Compile Include="TestScenarios\1\Kerkimi i orarit te kolegjit permes butonit Orari.cs" />
-    <Compile Include="TestScenarios\2\Blerja e Fletores.cs" />
     <Compile Include="TestScenarios\2\Blerja e Maices.cs" />
+    <Compile Include="TestScenarios\2\Porositja Fletores.cs" />
+    <Compile Include="TestScenarios\3\Interesim për ligjeratë virtuale.cs" />
     <Compile Include="TestScenarios\3\Navigimi ne bibliotek te kolegjit nga navbari.cs" />
     <Compile Include="TestScenarios\3\Navigimi ne Karrieren e kolegjit nga navbari.cs" />
     <Compile Include="TestScenarios\4\Aplikimi per burs nese nuk e zgjedhim programin per studim.cs" />

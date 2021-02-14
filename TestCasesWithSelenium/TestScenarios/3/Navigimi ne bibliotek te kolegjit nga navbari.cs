@@ -39,7 +39,8 @@ namespace TestCasesWithSelenium.TestScenarios._3
 
             Thread.Sleep(1000);
 
-            Assert.IsTrue(Driver.driver.PageSource.Contains("Biblioteka"));
+            Assert.IsEmpty(mesazhi);
         }
+      
     }
 }
